@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Device</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 <!--хедер-->
@@ -21,10 +21,10 @@
               <button class="button-search" type="submit" id="search-button">Найти</button>
             </form>
           </li>
-          <li class="navigation-user-item">
+          <li class="navigation-user-item log-in">
             <a class="navigation-user-link" href="#">Войти</a>
           </li>
-          <li class="navigation-user-item">
+          <li class="navigation-user-item compare">
             <a class="navigation-user-link" href="#">Сравнить</a>
           </li>
           <li class="navigation-user-item">
@@ -32,7 +32,7 @@
           </li>
         </ul>
         <ul class="navigation-list">
-          <li class="navigation-item">
+          <li class="navigation-item header-catalog">
             <a class="navigation-link" aria-current="page">Каталог товаров</a>
           </li>
           <li class="navigation-item">
@@ -92,10 +92,14 @@
             </li>
           </ol>
           <dl class="information-about-product">
-            <dt>800 м</dt>
-            <dd>Дальность полета</dd>
-            <dt>50 м</dt>
-            <dd>Радиус поражения</dd>
+            <div>
+              <dt>800 м</dt>
+              <dd>Дальность полета</dd>
+            </div>
+            <div>
+              <dt>50 м</dt>
+              <dd>Радиус поражения</dd>
+            </div>
           </dl>
         </div>
       </section>
@@ -104,40 +108,40 @@
         <div class="catalog-product">
           <ul class="catalog-product-list">
             <li class="catalog-product-item">
-              <a class="catalog-product-link" href="#">
+              <a class="catalog-product-link-image" href="#">
                 <img src="./image/glasses.svg" width="97" height="55" alt="Очки виртуальной реальности">
-                <span class="catalog-product-title">Очки виртуальной реальности</span>
               </a>
+              <a class="catalog-product-link-title">Виртуальная реальность</a>
             </li>
             <li class="catalog-product-item">
-              <a class="catalog-product-link" href="#">
+              <a class="catalog-product-link-image" href="#">
                 <img src="./image/monopod.svg" width="86" height="117" alt="Моноподы для селфи">
-                <span class="catalog-product-title">Моноподы для селфи</span>
               </a>
+              <a class="catalog-product-link-title">Моноподы <br> для селфи</a>
             </li>
             <li class="catalog-product-item">
-              <a class="catalog-product-link" href="#">
+              <a class="catalog-product-link-image" href="#">
                 <img src="./image/camera.svg" width="71" height="87" alt="Экшн-камеры">
-                <span class="catalog-product-title">Экшн-камеры</span>
               </a>
+              <a class="catalog-product-link-title">Экшн-камеры</a>
             </li>
             <li class="catalog-product-item">
-              <a class="catalog-product-link" href="#">
+              <a class="catalog-product-link-image" href="#">
                 <img src="./image/bracelet.svg" width="107" height="65" alt="Фитнес-браслеты">
-                <span class="catalog-product-title">Фитнес-браслеты</span>
               </a>
+              <a class="catalog-product-link-title">Фитнес-браслеты</a>
             </li>
             <li class="catalog-product-item">
-              <a class="catalog-product-link" href="#">
+              <a class="catalog-product-link-image" href="#">
                 <img src="./image/watch.svg" width="56" height="98" alt="Умные часы">
-                <span class="catalog-product-title">Умные часы</span>
               </a>
+              <a class="catalog-product-link-title">Умные часы</a>
             </li>
             <li class="catalog-product-item">
-              <a class="catalog-product-link" href="#">
+              <a class="catalog-product-link-image" href="#">
                 <img src="./image/quadrocopter.svg" width="132" height="69" alt="Квадрокоптеры">
-                <span class="catalog-product-title">Квадрокоптеры</span>
               </a>
+              <a class="catalog-product-link-title">Квадрокоптеры</a>
             </li>
           </ul>
         </div>
@@ -158,7 +162,7 @@
           </ul>
           <div class="delivery-container" id="delivery">
             <h3 class="delivery-title">Доставка</h3>
-            <p class="delivery-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь
+            <p class="delivery-description">Мы с удовольствием доставим ваш товар прямо <br> к вашему подъезду совершенно бесплатно! Ведь
             мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </div>
         </div>
