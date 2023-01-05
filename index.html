@@ -46,6 +46,41 @@
                 <span class="visually-hidden">Количество товаров в корзине</span>
               </span>
             </a>
+            <div class="popover popover-cart">
+              <div class="content">
+                <h2 class="visually-hidden">Корзина</h2>
+                <ul class="popover-list">
+                  <li class="popover-item">
+                    <a class="popover-item-information" href="#">
+                      <img src="./image/selfi-mini.png" width="39" height="43" alt="Мини-фотография любительской селфи-палки">
+                      <p class="popover-item-title">Любительская <br> селфи-палка</p>
+                    </a>
+                    <button class="popover-close" type="button">
+                      <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 1.68692L9.09091 0.777832L5 4.86874L0.909091 0.777832L0 1.68692L4.09091 5.77783L0 9.86874L0.909091 10.7778L5 6.68692L9.09091 10.7778L10 9.86874L5.90909 5.77783L10 1.68692Z" fill="white"/>
+                      </svg>
+                      <span class="visually-hidden">Закрыть</span>
+                    </button>
+                  </li>
+                  <li class="popover-item">
+                    <a class="popover-item-information" href="#">
+                      <img src="./image/professional-selfi-mini.png" width="39" height="43" alt="Мини-фотография профессиональной селфи палки">
+                      <p class="popover-item-title">Профессиональная <br>
+                        селфи-палка</p>
+                    </a>
+                      <button class="popover-close" type="button">
+                        <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M10 1.68692L9.09091 0.777832L5 4.86874L0.909091 0.777832L0 1.68692L4.09091 5.77783L0 9.86874L0.909091 10.7778L5 6.68692L9.09091 10.7778L10 9.86874L5.90909 5.77783L10 1.68692Z" fill="white"/>
+                        </svg>
+                        <span class="visually-hidden">Закрыть</span>
+                      </button>
+                  </li>
+                </ul>
+                <p class="popover-information">Товаров: 2</p>
+                <p class="popover-information information-about-price">Сумма: 2000 ₽</p>
+                <a class="popover-button" href="#">Открыть корзину</a>
+              </div>
+            </div>
           </li>
         </ul>
         <ul class="navigation-list">
@@ -474,8 +509,49 @@
       </div>
     </footer>
 <!--Модальное окно -->
-    <div class="modal-container">
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-order">
+        <button class="close-button">
+          <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M26 2.36364L23.6364 0L13 10.6364L2.36364 0L0 2.36364L10.6364 13L0 23.6364L2.36364 26L13 15.3636L23.6364 26L26 23.6364L15.3636 13L26 2.36364Z" fill="black"/>
+          </svg>
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <h2 class="modal-title">Доставка под заказ</h2>
+        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="modal-label" for="your-name">Ваше имя: <br>
+            <input class="modal-input" type="text" name="name" value="Введите имя" id="your-name">
+            <span class="name-description">Добавьте имя</span>
+          </label>
+          <label class="modal-label" for="your-email">Ваш e-mail: <br>
+            <div class="email-container">
+              <input class="modal-input-email" type="email" name="email" value="почта" id="your-email">
+              <span class="email-description">Забавный у вас адрес</span>
+            </div>
+          </label>
+          <label class="modal-label-information" for="information">Что нужно привезти: <br>
+            <input class="info-input" type="text" name="info" value="В свободной форме" id="information">
+          </label>
+          <label class="modal-label-amount" for="amount-products">Количество:
+            <span class="amount-description">
+              <span class="amount-description-hidden">Постараемся найти, сколько нужно. Привезём сколько получится по требованиям
+                к провозу багажа.</span>
+            </span>
+            <br>
+          <div class="container-amount">
+            <button class="amount-button button-minus" type="button">
+              <span class="visually-hidden">Уменьшить количество</span>
+            </button>
+            <input class="modal-input-amount" type="number" name="amount" id="amount-products" value="1">
+            <button class="amount-button button-plus" type="button">
+              <span class="visually-hidden">Увеличить количество</span>
+            </button>
+          </div>
+          </label>
 
+          <button class="modal-button" type="submit">Отправить</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>
